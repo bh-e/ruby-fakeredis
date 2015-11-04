@@ -1,0 +1,25 @@
+Source: ruby-fakeredis
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Abhijith PA <abhijith@openmailbox.org>
+Build-Depends: debhelper (>= 9),
+               gem2deb,
+	       ruby-rspec
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-fakeredis.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-fakeredis.git
+Homepage: https://github.com/guilleiguaran/fakeredis
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-fakeredis
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends},
+	 ruby-redis
+Description: In-memory driver for redis-rb, useful for development and test environments
+ ruby-fakeredis library is a fake(In-memory) implementation of redis-rb 
+ for machines without Redis or test environments.

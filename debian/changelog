@@ -1,0 +1,5 @@
+ruby-fakeredis (0.5.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #804001)  
+
+ -- Abhijith PA <abhijith@openmailbox.org>  Wed, 04 Nov 2015 11:36:23 +0530
