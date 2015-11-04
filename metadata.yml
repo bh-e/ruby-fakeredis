@@ -1,0 +1,124 @@
+--- !ruby/object:Gem::Specification
+name: fakeredis
+version: !ruby/object:Gem::Version
+  version: 0.5.0
+platform: ruby
+authors:
+- Guillermo Iguaran
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2014-07-01 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: redis
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '3.0'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '3.0'
+- !ruby/object:Gem::Dependency
+  name: rspec
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '3.0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: '3.0'
+description: Fake (In-memory) driver for redis-rb. Useful for testing environment
+  and machines without Redis.
+email:
+- guilleiguaran@gmail.com
+executables: []
+extensions: []
+extra_rdoc_files: []
+files:
+- ".gitignore"
+- ".travis.yml"
+- Gemfile
+- LICENSE
+- README.md
+- Rakefile
+- fakeredis.gemspec
+- lib/fake_redis.rb
+- lib/fakeredis.rb
+- lib/fakeredis/command_executor.rb
+- lib/fakeredis/expiring_hash.rb
+- lib/fakeredis/rspec.rb
+- lib/fakeredis/sort_method.rb
+- lib/fakeredis/sorted_set_argument_handler.rb
+- lib/fakeredis/sorted_set_store.rb
+- lib/fakeredis/transaction_commands.rb
+- lib/fakeredis/version.rb
+- lib/fakeredis/zset.rb
+- lib/redis/connection/memory.rb
+- spec/compatibility_spec.rb
+- spec/connection_spec.rb
+- spec/hashes_spec.rb
+- spec/keys_spec.rb
+- spec/lists_spec.rb
+- spec/memory_spec.rb
+- spec/server_spec.rb
+- spec/sets_spec.rb
+- spec/sort_method_spec.rb
+- spec/sorted_sets_spec.rb
+- spec/spec_helper.rb
+- spec/spec_helper_live_redis.rb
+- spec/strings_spec.rb
+- spec/support/shared_examples/sortable.rb
+- spec/transactions_spec.rb
+- spec/upcase_method_name_spec.rb
+homepage: https://guilleiguaran.github.com/fakeredis
+licenses:
+- MIT
+metadata: {}
+post_install_message: 
+rdoc_options: []
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 2.2.0
+signing_key: 
+specification_version: 4
+summary: Fake (In-memory) driver for redis-rb.
+test_files:
+- spec/compatibility_spec.rb
+- spec/connection_spec.rb
+- spec/hashes_spec.rb
+- spec/keys_spec.rb
+- spec/lists_spec.rb
+- spec/memory_spec.rb
+- spec/server_spec.rb
+- spec/sets_spec.rb
+- spec/sort_method_spec.rb
+- spec/sorted_sets_spec.rb
+- spec/spec_helper.rb
+- spec/spec_helper_live_redis.rb
+- spec/strings_spec.rb
+- spec/support/shared_examples/sortable.rb
+- spec/transactions_spec.rb
+- spec/upcase_method_name_spec.rb
