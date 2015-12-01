@@ -22,5 +22,7 @@ Depends: ruby | ruby-interpreter,
          ${shlibs:Depends},
 	 ruby-redis
 Description: In-memory driver for redis-rb, useful for development and test environments
- ruby-fakeredis library is a fake(In-memory) implementation of redis-rb 
- for machines without Redis or test environments.
+ ruby-fakeredis library is a fake(In-memory) implementation of redis-rb, 
+ a Ruby client that tries to match Redis' API one-to-one, while 
+ still providing an idiomatic interface for machines without 
+ Redis or test environments.
